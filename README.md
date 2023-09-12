@@ -1,18 +1,23 @@
-# nosql-challenge
-Project Summary: Food Hygiene Ratings Analysis for Eat Safe, Love Magazine
+# Food Hygiene Ratings Analysis for Eat Safe, Love Magazine
 
-## Intro
-The project aims to assist Eat Safe, Love magazine in selecting establishments to focus their future articles on by analyzing food hygiene ratings data provided by the UK Food Standards Agency. The project is divided into three parts: database and Jupyter Notebook setup, updating the database, and exploratory analysis.
+## Project Summary
 
-## Part 1
-Note: Parts 1 and 2 are located on the NoSQL setup starter ipynb
-In Part 1, a NoSQL database named "uk_food" is created, and the "establishments" collection is imported from the "establishments.json" file. The required libraries, PyMongo and PPrint, are imported, and a connection to the MongoDB client is established. The successful creation of the database and collection is confirmed by listing the database and collection, and a sample document from the "establishments" collection is displayed.
+This project serves as an analytical endeavor aimed at supporting Eat Safe, Love magazine in the selection of establishments to feature in their future articles. The analysis is based on food hygiene ratings data provided by the UK Food Standards Agency. The project unfolds in three distinct parts, encompassing database setup, database updates, and exploratory analysis.
 
-## Part 2
-Part 2 focuses on updating the database according to the magazine editors' requests. A new halal restaurant, Penang Flavours, is added to the database with the necessary information. The BusinessTypeID for "Restaurant/Cafe/Canteen" is found and assigned to the new restaurant. The number of documents containing the Dover Local Authority is checked, and establishments within Dover are removed from the database. Lastly, number values stored as strings are converted to numeric values using the update_many method.
+## Part 1: NoSQL Database Setup
 
-## Part 3
-Note: Parts 1 and 2 are located on the NoSQL analysis starter ipynb
-Part 3 involves exploratory analysis of the database to answer specific questions posed by Eat Safe, Love magazine. Each question requires counting documents, displaying the first document, converting the results to a Pandas DataFrame, and displaying the first 10 rows. The questions include identifying establishments with a hygiene score of 20, establishments in London with a RatingValue greater than or equal to 4, the top 5 establishments with a RatingValue of 5 sorted by lowest hygiene score and proximity to "Penang Flavours," and the count of establishments in each Local Authority area with a hygiene score of 0, sorted from highest to lowest, with the top ten local authority areas printed.
+*Note: Parts 1 and 2 are located within the NoSQL setup starter notebook.*
 
-By analyzing the food hygiene ratings data and providing answers to the magazine's questions, this project will aid Eat Safe, Love in making informed decisions about future article focuses and help their journalists and food critics select establishments that meet their standards of hygiene and quality.
+In Part 1, we initiate the process by establishing a NoSQL database named "uk_food." This database is populated with the "establishments" collection, imported from the "establishments.json" file. The essential libraries, namely PyMongo and PPrint, are imported to facilitate the task. We establish a connection to the MongoDB client and verify the successful creation of the database and collection. A sample document from the "establishments" collection is presented for reference.
+
+## Part 2: Database Update
+
+Part 2 of the project revolves around accommodating the specific requests made by the magazine's editors. Key tasks in this phase include the addition of a new halal restaurant, "Penang Flavours," to the database with all relevant information. We diligently determine the BusinessTypeID for "Restaurant/Cafe/Canteen" and associate it with the new restaurant entry. Furthermore, we inspect the count of documents containing the Dover Local Authority and subsequently remove establishments within the Dover region from the database. Finally, we address the issue of numeric values stored as strings by employing the update_many method.
+
+## Part 3: Exploratory Analysis
+
+*Note: Parts 1 and 2 are located within the NoSQL analysis starter notebook.*
+
+The heart of the project lies in Part 3, where we embark on an exploratory analysis of the database. Our objective is to provide precise answers to specific queries posed by Eat Safe, Love magazine. Each inquiry necessitates a series of steps, including document counting, display of the initial document, conversion of results into a Pandas DataFrame, and presentation of the first 10 rows. Our analysis tackles questions such as identifying establishments with a hygiene score of 20, pinpointing establishments in London with a RatingValue greater than or equal to 4, listing the top 5 establishments with a RatingValue of 5, sorted by the lowest hygiene score and proximity to "Penang Flavours," and revealing the count of establishments in each Local Authority area with a hygiene score of 0. The results are thoughtfully organized, with the top ten local authority areas listed in descending order.
+
+By meticulously analyzing food hygiene ratings data and delivering precise responses to the magazine's inquiries, this project aims to empower Eat Safe, Love in making well-informed decisions regarding the focus of their future articles. This data-driven approach will assist their journalists and food critics in selecting establishments that align with their stringent standards of hygiene and quality.
